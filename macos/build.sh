@@ -63,6 +63,7 @@ cp "${HTML_SRC}" "${OUT_BUNDLE}/Contents/Resources/screensaver.html"
 mkdir -p "${OUT_BUNDLE}/Contents/Resources/assets"
 cp -R "${ASSETS_SRC}/fonts" "${OUT_BUNDLE}/Contents/Resources/assets/"
 cp -R "${ASSETS_SRC}/styles" "${OUT_BUNDLE}/Contents/Resources/assets/"
+cp -R "${ASSETS_SRC}/images" "${OUT_BUNDLE}/Contents/Resources/assets/"
 
 # Drop the raw .zip from the bundled Resources to keep it lean.
 rm -f "${OUT_BUNDLE}/Contents/Resources/assets/fonts/ABC Diatype Mono.zip"
